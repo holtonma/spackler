@@ -2,9 +2,9 @@ module Spackler
 
   # license: copy this code as much as you want to
   # originally created: 10-29-2008
-  # purpose: scrape the golf tournament scores, and present it in a more usable form (Array of ostruct's)
+  # published as ruby gem: 12/24/2010
+  # purpose: acquire golf tournament scores, and present it in a more usable form (Array of ostruct's)
   
-  #require 'rubygems'
   require 'nokogiri'
   require 'open-uri'
   require 'ostruct'
