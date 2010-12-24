@@ -99,7 +99,7 @@ module Spackler
                   }
         elsif year == 2010
           urls = %w(
-                    r032
+                    r032 r016
                   ).map { |t|
                     "http://www.pgatour.com/leaderboards/current/#{t}/alt-1.html"
                   }
