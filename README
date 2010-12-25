@@ -9,21 +9,22 @@ by: Mark Holton via RedGrind, LLC (holtonma@gmail.com)
 INSTALLATION 
 1. gem install spackler
 
-GETTING STARTED
-1. run $bundle to ensure you obtain the required dependencies
+IF YOU PLAN TO SUBMIT A PATCH
+1. after your git clone, run 'bundle' to ensure you obtain the required dependencies
 
 USAGE
-#example class using Spackler gem:
-require 'spackler'
+#example class using Spackler gem, create a file named whatever.rb:
+  require 'spackler'
   
-major = Spackler::Major.new
-url = major.get_urls(2010)[0] #2010 Masters
+  major = Spackler::Major.new
+  url = major.get_urls(2010)[0] #2010 Masters
   
-puts "grabbing URL data from... #{url}"
-players = major.friendly_structure(major.fetch(url))
+  puts "grabbing URL data from... #{url}"
+  players = major.friendly_structure(major.fetch(url))
   
-puts players
+  puts players
 
+# when you run that whatever.rb file > ruby whatever.rb
 # you will see the output that looks like:
   # grabbing URL data from... http://www.pga.com/openchampionship/2010/scoring/index.cfm
   # pos: 1
