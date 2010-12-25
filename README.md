@@ -29,7 +29,7 @@ After your git clone, run bundle command to ensure you obtain the required depen
     Using bundler (1.0.7) 
   
 ## USAGE
-example class using Spackler gem, create a file named whatever.rb:
+example using Spackler gem, create a file named whatever.rb:
     # whatever.rb
     require 'spackler'
     
