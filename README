@@ -11,7 +11,6 @@ USAGE
 require 'Spackler'
 include Spackler
   
-url = 'http://pga.com'
 major = Spackler::Major.new
 url = major.get_urls(2010)[0] #2010 Masters
   
@@ -19,3 +18,32 @@ puts "grabbing URL data from... #{url}"
 players = major.friendly_structure(major.fetch(url))
   
 puts players
+
+# you will see the output that looks like:
+  # grabbing URL data from... http://www.pga.com/openchampionship/2010/scoring/index.cfm
+  # pos: 1
+  # mo: -
+  # name: Louis Oosthuizen
+  # to_par: -16
+  # thru: F
+  # today: -1
+  # r1: 65
+  # r2: 67
+  # r3: 69
+  # r4: 71
+  # total: 272
+  # pos: 2
+  # mo: 2
+  # name: Lee Westwood
+  # to_par: -9
+  # thru: F
+  # today: -2
+  # r1: 67
+  # r2: 71
+  # r3: 71
+  # r4: 70
+  # total: 279
+  # pos: T3
+  # mo: 9
+  # name: Rory McIlroy
+
