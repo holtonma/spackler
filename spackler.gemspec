@@ -5,7 +5,7 @@ require "spackler/version"
 Gem::Specification.new do |s|
   s.add_development_dependency %q<nokogiri>, [">= 1.3"]
   
-  s.name        = "SPACKLER"
+  s.name        = "spackler"
   s.version     = Spackler::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Mark Holton (RedGrind, LLC)"]
