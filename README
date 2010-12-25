@@ -8,8 +8,7 @@ GETTING STARTED
 
 USAGE
 #example class using Spackler gem:
-require 'Spackler'
-include Spackler
+require 'spackler'
   
 major = Spackler::Major.new
 url = major.get_urls(2010)[0] #2010 Masters
