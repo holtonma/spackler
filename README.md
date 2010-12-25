@@ -30,6 +30,7 @@ After your git clone, run bundle command to ensure you obtain the required depen
   
 ## USAGE
 example class using Spackler gem, create a file named whatever.rb:
+    # whatever.rb
     require 'spackler'
     
     major = Spackler::Major.new
