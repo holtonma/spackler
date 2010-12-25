@@ -1,3 +1,6 @@
+"In the immortal words of Jean Paul Sartre, 'Au revoir, gopher'"
+-Carl Spackler, Caddyshack
+
 by: Mark Holton via RedGrind, LLC
 
 INSTALLATION 
@@ -5,9 +8,6 @@ INSTALLATION
 
 GETTING STARTED
 1. run $bundle to ensure you obtain the required dependencies
-
-"In the immortal words of Jean Paul Sartre, 'Au revoir, gopher'"
--Carl Spackler, Caddyshack
 
 USAGE
 #example class using Spackler gem:
