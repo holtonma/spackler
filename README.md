@@ -21,9 +21,8 @@ The best way is with RubyGems:
     $ [sudo] gem install spackler
 
 ## IF YOU PLAN TO SUBMIT A PATCH
-After your git clone, run  
+After your git clone, run bundle command to ensure you obtain the required dependencies 
     $ bundle 
-to ensure you obtain the required dependencies  
     Fetching source index for http://rubygems.org/
     Using nokogiri (1.4.4) 
     Using spackler (0.9.2.5) from source at /Users/yourname/yourdir/spackler 
@@ -68,19 +67,19 @@ you will see the output that looks like:
     r4: 70
     total: 279
     pos: T3
-    mo: 9    
-...
-the 'players' variable will hold data as follows for you to use as you wish:
-    \#<OpenStruct pos="1", mo="-", name="Louis Oosthuizen", to_par="-16", thru="F", today="-1", r1="65", r2="67", r3="69", r4="71", total="272", fname="Louis", lname="Oosthuizen">
-    \#<OpenStruct pos="2", mo="2", name="Lee Westwood", to_par="-9", thru="F", today="-2", r1="67", r2="71", r3="71", r4="70", total="279", fname="Lee", lname="Westwood">
-    \#<OpenStruct pos="T3", mo="9", name="Rory McIlroy", to_par="-8", thru="F", today="-4", r1="63", r2="80", r3="69", r4="68", total="280", fname="Rory", lname="McIlroy">
-    \#<OpenStruct pos="T3", mo="1", name="Henrik Stenson", to_par="-8", thru="F", today="-1", r1="68", r2="74", r3="67", r4="71", total="280", fname="Henrik", lname="Stenson">
-    \#<OpenStruct pos="T3", mo="1", name="Paul Casey", to_par="-8", thru="F", today="+3", r1="69", r2="69", r3="67", r4="75", total="280", fname="Paul", lname="Casey">
-    \#<OpenStruct pos="6", mo="2", name="Retief Goosen", to_par="-7", thru="F", today="-2", r1="69", r2="70", r3="72", r4="70", total="281", fname="Retief", lname="Goosen">    
+    mo: 9
+    ...     
+the 'players' variable in this example will hold data as follows for you to use as you wish:
+    #<OpenStruct pos="1", mo="-", name="Louis Oosthuizen", to_par="-16", thru="F", today="-1", r1="65", r2="67", r3="69", r4="71", total="272", fname="Louis", lname="Oosthuizen">
+    #<OpenStruct pos="2", mo="2", name="Lee Westwood", to_par="-9", thru="F", today="-2", r1="67", r2="71", r3="71", r4="70", total="279", fname="Lee", lname="Westwood">
+    #<OpenStruct pos="T3", mo="9", name="Rory McIlroy", to_par="-8", thru="F", today="-4", r1="63", r2="80", r3="69", r4="68", total="280", fname="Rory", lname="McIlroy">
+    #<OpenStruct pos="T3", mo="1", name="Henrik Stenson", to_par="-8", thru="F", today="-1", r1="68", r2="74", r3="67", r4="71", total="280", fname="Henrik", lname="Stenson">
+    #<OpenStruct pos="T3", mo="1", name="Paul Casey", to_par="-8", thru="F", today="+3", r1="69", r2="69", r3="67", r4="75", total="280", fname="Paul", lname="Casey">
+    #<OpenStruct pos="6", mo="2", name="Retief Goosen", to_par="-7", thru="F", today="-2", r1="69", r2="70", r3="72", r4="70", total="281", fname="Retief", lname="Goosen">    
       ...
 So for instance, after the above example, if you continued:
-      players[0].name  \#=> "Louis Oosthuizen" 
-      players[0].lname \#=> "Oosthuizen"
-      players[0].total \#=> "272"    
+      players[0].name  #=> "Louis Oosthuizen" 
+      players[0].lname #=> "Oosthuizen"
+      players[0].total #=> "272"    
 
 
