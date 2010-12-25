@@ -3,22 +3,21 @@ $:.push File.expand_path("../lib", __FILE__)
 require "spackler/version"
 
 Gem::Specification.new do |s|
-  s.add_development_dependency "nokogiri"
-  s.add_development_dependency "open-uri"
-  s.add_development_dependency "ostruct"
-  s.add_development_dependency "iconv"
+  s.add_development_dependency %q<nokogiri>, [">= 1.3"]
   
-  s.name        = "spackler"
+  s.name        = "SPACKLER"
   s.version     = Spackler::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Mark Holton"]
+  s.authors     = ["Mark Holton (RedGrind, LLC)"]
   s.email       = ["holtonma@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/holtonma/spackler"
   s.summary     = %q{Obtain all data from PGA Tour, European Tour, and Majors in a friendly
                      output format}
-  s.description = %q{The spackler gem enables you to very easily obtain data on all golf 
-                     tournament scores throughout the web.  See README for more details}
-
+  s.description = <<-EOF
+    'The spackler gem enables you to very easily obtain data on all golf 
+    tournament scores throughout the web.  See README for more details'
+  EOF
+  
   s.rubyforge_project = "spackler"
 
   s.files         = `git ls-files`.split("\n")

@@ -2,12 +2,18 @@
 # originally created: 10-29-2008
 # published as ruby gem: 12/24/2010
 # purpose: acquire golf tournament scores, and present it in a more usable form (Array of ostruct's)
-
 require 'nokogiri'
 require 'open-uri'
 require 'ostruct'
 require 'iconv'
 
+#monkey patch String to remove any non-ASCII characters from scrapeage
+class String
+  def to_ascii_iconv
+    converter = Iconv.new('ASCII//IGNORE//TRANSLIT', 'UTF-8')
+    converter.iconv(self).unpack('U*').select{ |cp| cp < 127 }.pack('U*')
+  end
+end
 
 module Spackler
   class Player

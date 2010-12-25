@@ -8,20 +8,14 @@ GETTING STARTED
 
 USAGE
 #example class using Spackler gem:
-class Scrape < ActiveRecord::Base
-  include Spackler
+require 'Spackler'
+include Spackler
   
-  def fetch_players_in_major 
-    url = "http://pga.com"
-    major = Spackler::Major.new
-    url = major.get_urls(2010)[0] #2010 Masters
-    
-    puts "grabbing URL data from... #{url}"
-    players = major.friendly_structure(major.fetch(url))
-    
-    players
-  end
-end
-
-masters = Scrape.new
-puts masters.fetch_players_in_major
+url = 'http://pga.com'
+major = Spackler::Major.new
+url = major.get_urls(2010)[0] #2010 Masters
+  
+puts "grabbing URL data from... #{url}"
+players = major.friendly_structure(major.fetch(url))
+  
+puts players
